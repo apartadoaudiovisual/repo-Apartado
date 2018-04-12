@@ -112,7 +112,11 @@ public partial class AreasDeServicio : System.Web.UI.Page
 
         }
     }
-
+    /// <summary>
+    /// hola jp
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void ConfigurarAS(object sender, EventArgs e) {
 
         listaASSel = (List<string>)Session["listaASSel"];
