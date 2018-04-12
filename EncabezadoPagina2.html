@@ -1,0 +1,308 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<title>Portal de autentificación ITSON</title>
+<style>
+    
+	/* HEADER */
+	body {
+		margin:0px;
+		}
+		
+	#title {
+		font-size:calc(1.5em + 1vw);
+		text-align:center;
+		font-family:Arial, Helvetica, sans-serif;
+		color:white;
+		font-weight:600;
+		text-shadow: 2px 2px 4px rgba(4, 4, 4, 0.35);
+		font-stretch:extra-expanded;
+		padding-top:35px;
+		}
+		
+	#welcome {
+		font-size:1.8em;
+		color:#004e92;
+		font-stretch:extra-expanded;
+		text-align:center;
+		font-family:Arial, Helvetica, sans-serif;
+		margin: 10px 0 0;
+		}
+		
+		
+	header {
+		display:block;
+		background: #000428;  
+		background: -webkit-linear-gradient(to right, #004e92, #0062b7, #0062b7, #004e92); 
+		background: linear-gradient(to right, #004e92, #0062b7, #0062b7, #004e92); 
+		top:0;
+		height:5em;
+		padding-bottom:5px;
+		}
+	
+	#image {
+		width:20%;
+		text-align:center;
+		float:left;
+		}
+	
+	#titleHeader {
+		width:100%;
+		float:rigth;	
+		}
+		
+	#line{
+		color: 6eb7ff;
+	    height: 3px;
+    	background-color: #6eb7ff;
+   	 	border: 0;
+	    width: 100%;
+    	padding: 1px 0 ;
+	    margin: 5px 0;
+		}
+		
+	#linebottom{
+		height: 10px;
+   		background-color: #0063ad;
+   		border: 0;
+    	width: 100%;
+    	bottom: 0;
+    	position: relative;
+    	display: inline-block;
+	}
+ 	
+	/* CONTAINER */
+	.container {
+		font-size:14pt;
+		color:gray;
+		font-stretch:extra-expanded;
+		text-align:center;
+		font-family:Arial, Helvetica, sans-serif;
+		background-color:white;
+		padding: 20px 0;
+		height:auto;
+		}
+
+	#accesoportal{
+		width:100%;
+		text-align:center;
+		}
+	
+	#logoitson{
+		width:100%;
+		text-align:center;
+		}
+		
+	#portal{
+		font-size:larger;
+		height:auto;
+		margin:0 10px 35px;
+		}
+		
+	#acceso {
+		padding:20px;
+		width:70%;
+		display:inline-block;
+		box-shadow:0px 0px 10px #666666;
+		text-align:-webkit-center;
+		margin:30px;
+		}
+		
+	.col-lg-12 .col-md-12{
+	    width:65% !important;
+	    }
+		
+	#invitado {
+		float: left;
+   	 	padding:0 10px;
+   	 	display: inline-block;
+        vertical-align:bottom;
+		width:100%;
+		background-color:white;
+		}
+		
+	#wifi {
+		float:right;
+	}
+         	
+	#invitado img {
+		padding:0 5px;
+		}
+		
+	div#logoitson img {
+		width:450px;
+		height:auto;
+		}
+
+	.btn-primary{
+		background-color:#0060b3 !important;
+		border-color:#0060b3 !important;
+		cursor:pointer;
+		}
+
+	.btn:hover{
+		color:white;
+		}
+	
+	.btn-primary:hover{
+		background-color:#033967  !important;
+		border-color:#033967  !important;
+		cursor:pointer;
+		}
+		
+	/* FOOTER */	
+	#password {
+		font-size:12pt;
+		color:white;
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight:200;
+		}
+		
+	#anyproblem a {
+		text-decoration:none;
+		color:#72b7fb;
+		font-weight:400;
+		}
+		
+	h1 {
+		text-align: center;
+        font-weight: 400 !important;
+        font-size: large;
+        display: inline-block;
+        width:100%;
+        padding: 0 25px;
+        background-color: #292929;
+        color: white;
+		}
+		
+	#anyproblem h1 span{
+		color:white;
+		font-size:12pt;
+		line-height:115%;
+		font-stretch:extra-expanded;
+		padding:0 10px;
+		}
+		
+	#anyproblem a:hover {
+		color:#00ceff;
+		text-decoration:none;
+		}
+		
+	button {
+	    box-shadow: rgba(0, 0, 0, 0.45) -1px -2px 2px 0px inset;
+   		border-radius: 6px;
+   		border: 1px solid rgb(51, 127, 237);
+    	display: inline-block;
+    	cursor: pointer;
+    	color: rgb(255, 255, 255);
+    	font-family: Arial;
+    	font-size: 15px;
+    	font-weight: bold;
+    	padding: 6px 24px;
+    	text-decoration: none;
+    	text-shadow: #252525 0px 1.1px 2px;
+		margin:10px;
+   	}
+		
+	/*footer #invitado{
+	    background-color: White;
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: right;
+	    }
+	    
+	#problems {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12pt;
+		color:white;
+		padding:20px;
+		} */
+		
+	#anyproblem{
+        position: fixed;
+  		right: 0;
+  		bottom: 0;
+		left: 0;
+ 		background-color: rgb(42, 43, 43);
+  		text-align: justify;
+  		color:White;
+  		}
+  		
+  	footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align:right;
+        }
+		
+	footer img{
+		width:100%;
+	}
+</style>
+
+<body>
+
+<!-- HEADER -->
+    <header>
+	    <div id="titleHeader">
+            <p id="title"></p>
+        </div>
+    </header>
+
+    <div id="line"></div>
+
+<!-- CONTENIDO -->
+    <div class="container">
+	    <div id="logoitson">	
+	   	    <img src="img/ITSON-MARCA1.jpg" />
+     	</div> 
+        
+     	<div id="accesoportal">	
+      	    <p id="welcome">Bienvenidos</p>
+     	    <p id="portal">Portal de autentificación servicio de red inalámbrica Potros Wifi</p>
+   
+   		    <div id="acceso">
+    		    <div class="col-lg-12 col-md-12">
+                    
+                    <div class="form-group">
+                        <label> Usuario</label>
+                        <input type="text" id="PCUsuario" class="form-control input-sm" maxlength="11" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="text" id="PCPassword" class="form-control input-sm" maxlength="20" />
+                    </div>  
+                    
+                </div>
+                    <button type="submit" class="btn btn-primary">Acceder</button>
+                </div><br /><br /><br />
+        </div>
+     </div>  
+          <br />
+    
+ 
+
+<!-- FOOTER -->    
+<footer> 
+   
+   <div id="invitado" style="text-align:center; display:inline-block;">
+   
+   
+ 	  	<button type="button" class="btn btn-primary" style="padding:5px; font-size:14pt; font-weight:500; font-stretch:extra-expanded;"> <span class="glyphicon glyphicon-user"></span> &nbsp; <a href="http://intranet2.itson.mx/invitado/" target="_blank" style="color:white; text-decoration:none;">Registrar Usuario invitado </a></button>&nbsp;&nbsp;&nbsp;
+        
+        <button type="button" class="btn btn-success" style="padding:5px; font-size:14pt; font-weight:500; font-stretch:extra-expanded;" > <span class="glyphicon glyphicon-lock"></span> &nbsp;<a href="https://apps2.itson.edu.mx/CambioPass/RecuperaPass.aspx" target="_blank" style="color:white; text-decoration:none">Recuperar Contraseña</a></button>&nbsp;&nbsp;&nbsp;
+        
+   		<button type="button" class="btn btn-danger" style="padding:5px; font-size:14pt; font-weight:500; font-stretch:extra-expanded;" ><span class="glyphicon glyphicon-alert"></span> <a href="mailto:overridecen@itson.edu.mx" style="color:white; text-decoration:none">  Reportar problemas</a></button>
+   <p></p>
+ 
+    <div id="linebottom"></div>
+
+   </footer>
+</body>
+</html>

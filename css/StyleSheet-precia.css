@@ -1,0 +1,585 @@
+﻿* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family:Arial;
+	background-image:url('img/registroescolar.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+a {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #0056b3;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+.txt1 {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  font-weight:600;
+}
+
+.txt2 {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0179ca;
+  font-weight:600;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login{
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.wrap-login {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.7294117647058823);
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    border-color: white;
+    box-shadow: 0px 5px 20px black;
+	
+}
+
+#playstore-text {
+	font-size:16px;
+	color:black;
+	font-weight:bold;
+	font-family:Arial;
+	width:100%;
+	}
+
+.login-pic {
+    width: 50%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.login-pic img {
+  max-width: 47%;
+  text-align:center;
+}
+
+.login-form {
+  width: 48%;
+  text-align: center;
+  padding: 5%;
+  display: inline-block;
+}
+
+.login-form-title {
+  font-family: Arial;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 50px 0;
+}
+
+.wrap-input {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+ }
+
+.input{
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 1.5;
+  color:black;
+  display: block;
+  width: 100%;
+  background: white;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+}
+
+/*div.playstore a{
+	width:80%;
+	text-align:center;
+	}
+
+.playstore img:hover {
+	transition-duration: .5s;
+	transition-property:all;
+	width:65%;
+	height:65%;
+	color:pink;
+	} */
+
+.focus-input {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(3, 169, 244, 0.58);
+}
+
+.symbol-input {
+    color: #015dbf;
+    padding-left: 28px;
+	}
+
+.input:focus + .focus-input {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+.symbol-input {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  pointer-events: none;
+  color: #666666;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input:focus + .focus-input + .symbol-input {
+  color: #036db6;
+  padding-left: 28px;
+}
+
+.container-login-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.login-form-btn {
+	font-family: Roboto;
+    font-size: 13px;
+    line-height: 1.5;
+    color: white;
+    text-transform: uppercase;
+    font-weight:bold;
+    height: 30px;
+    border-radius: 25px;
+    background: #09F;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    font-stretch:ultra-expanded;
+}
+
+.login-form-btn:hover {
+  background: #033D94;
+}
+
+@media (max-width: 992px) {
+  .wrap-login {
+    padding: 10%;
+	margin: 30px;
+  }
+
+  .login-pic {
+    text-align:center;
+	width:100%;
+  }
+  
+  .login-pic img {
+	  max-width: 40%;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+  
+  .login-form img{
+	width: 70%;  
+  }
+  
+  #playstore-text {
+    font-size: 13px;
+  }
+  
+  .txt1 {
+    font-size:11px;
+  }
+  
+  .txt2 {
+    font-size:11px;
+  }
+  
+  #CIA {
+    font-size: 10px !important;
+  }
+    
+  
+}
+
+@media (max-width: 768px) {
+  .wrap-login {
+    padding: 10%;
+  }
+
+  .login-pic {
+    text-align:center;
+	width:100%;
+  }
+   
+  .login-pic img {
+	  max-width: 40%;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+  
+  .login-form img{
+	width: 70%;  
+  }
+  
+  #playstore-text {
+    font-size: 13px;
+    }
+    
+  .txt1 {
+    font-size:11px;
+  }
+  
+  .txt2 {
+    font-size:11px;
+  }
+    
+  #CIA {
+    font-size: 10px;
+  }
+  
+}
+
+
+@media (max-width: 576px) {
+  .wrap-login {
+    padding: 10%;
+  }
+  
+    #CIA {
+    font-size: 10px;
+  }
+  
+  .txt1 {
+    font-size:11px;
+  }
+  
+  .txt2 {
+    font-size:11px;
+  }
+  
+}
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: white;
+  border: 1px solid #c80000;
+  border-radius: 13px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+  pointer-events: none;
+
+  font-family: Arial;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 13px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #CIA {
+    font-size: 10px;
+  }
+  
+  .txt1 {
+      font-size:13px;
+      }
+      
+  .txt2 {
+      font-size:13px;
+      }
+}
+
+.text-password {
+	padding:15px 0;
+	}
+	
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+#logoITSON{
+    width: 70%;
+   /* position: absolute;
+    margin: 25px;
+    display: block;
+	} */}
+	
+#googleplay {
+    width:50%;
+    display:inline-block;
+    float:left;
+}
+
+#appstore {
+    width:50%;
+    display:inline-block;
+    float:rigth;
+}
+
+#CIA {
+   font-size:16px;
+   color:#0056b3;
+   font-weight:600;
+    }
+    
+#siglasCIA {
+   font-size:28px;
+   color:#0056b3;
+   font-weight:600;
+   line-height:0;
+    }

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http//promepca.sep.gob.mx/WSPromep/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http//promepca.sep.gob.mx/WSPromep/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http//promepca.sep.gob.mx/WSPromep/">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="IdentificaPTC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IdentificaPTCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdentificaPTCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Direccion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DireccionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DireccionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Estudios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstudiosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstudiosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Produccion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProduccionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProduccionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Proyectos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProyectosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProyectosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DatosLaborales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DatosLaboralesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DatosLaboralesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GestionAcademica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GestionAcademicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GestionAcademicaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Premios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PremiosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PremiosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tutorias">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TutoriasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TutoriasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IdentificaPTCSoapIn">
+    <wsdl:part name="parameters" element="tns:IdentificaPTC" />
+  </wsdl:message>
+  <wsdl:message name="IdentificaPTCSoapOut">
+    <wsdl:part name="parameters" element="tns:IdentificaPTCResponse" />
+  </wsdl:message>
+  <wsdl:message name="DireccionSoapIn">
+    <wsdl:part name="parameters" element="tns:Direccion" />
+  </wsdl:message>
+  <wsdl:message name="DireccionSoapOut">
+    <wsdl:part name="parameters" element="tns:DireccionResponse" />
+  </wsdl:message>
+  <wsdl:message name="EstudiosSoapIn">
+    <wsdl:part name="parameters" element="tns:Estudios" />
+  </wsdl:message>
+  <wsdl:message name="EstudiosSoapOut">
+    <wsdl:part name="parameters" element="tns:EstudiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProduccionSoapIn">
+    <wsdl:part name="parameters" element="tns:Produccion" />
+  </wsdl:message>
+  <wsdl:message name="ProduccionSoapOut">
+    <wsdl:part name="parameters" element="tns:ProduccionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProyectosSoapIn">
+    <wsdl:part name="parameters" element="tns:Proyectos" />
+  </wsdl:message>
+  <wsdl:message name="ProyectosSoapOut">
+    <wsdl:part name="parameters" element="tns:ProyectosResponse" />
+  </wsdl:message>
+  <wsdl:message name="DatosLaboralesSoapIn">
+    <wsdl:part name="parameters" element="tns:DatosLaborales" />
+  </wsdl:message>
+  <wsdl:message name="DatosLaboralesSoapOut">
+    <wsdl:part name="parameters" element="tns:DatosLaboralesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GestionAcademicaSoapIn">
+    <wsdl:part name="parameters" element="tns:GestionAcademica" />
+  </wsdl:message>
+  <wsdl:message name="GestionAcademicaSoapOut">
+    <wsdl:part name="parameters" element="tns:GestionAcademicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PremiosSoapIn">
+    <wsdl:part name="parameters" element="tns:Premios" />
+  </wsdl:message>
+  <wsdl:message name="PremiosSoapOut">
+    <wsdl:part name="parameters" element="tns:PremiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TutoriasSoapIn">
+    <wsdl:part name="parameters" element="tns:Tutorias" />
+  </wsdl:message>
+  <wsdl:message name="TutoriasSoapOut">
+    <wsdl:part name="parameters" element="tns:TutoriasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PROMEP_x0020_Web_x0020_ServicesSoap">
+    <wsdl:operation name="IdentificaPTC">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de los PTC</documentation>
+      <wsdl:input message="tns:IdentificaPTCSoapIn" />
+      <wsdl:output message="tns:IdentificaPTCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Direccion">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de Dirección individualizada</documentation>
+      <wsdl:input message="tns:DireccionSoapIn" />
+      <wsdl:output message="tns:DireccionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Estudios">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de Estudios realizados</documentation>
+      <wsdl:input message="tns:EstudiosSoapIn" />
+      <wsdl:output message="tns:EstudiosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Produccion">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de la Producción Académica</documentation>
+      <wsdl:input message="tns:ProduccionSoapIn" />
+      <wsdl:output message="tns:ProduccionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Proyectos">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de los Proyectos Patrocinados</documentation>
+      <wsdl:input message="tns:ProyectosSoapIn" />
+      <wsdl:output message="tns:ProyectosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DatosLaborales">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de los Datos Laborales de los PTC</documentation>
+      <wsdl:input message="tns:DatosLaboralesSoapIn" />
+      <wsdl:output message="tns:DatosLaboralesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GestionAcademica">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de la Gestión Académica</documentation>
+      <wsdl:input message="tns:GestionAcademicaSoapIn" />
+      <wsdl:output message="tns:GestionAcademicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Premios">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de los premios obtenidos por los PTC</documentation>
+      <wsdl:input message="tns:PremiosSoapIn" />
+      <wsdl:output message="tns:PremiosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tutorias">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Trae la información de las tutorías realizadas por los PTC</documentation>
+      <wsdl:input message="tns:TutoriasSoapIn" />
+      <wsdl:output message="tns:TutoriasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PROMEP_x0020_Web_x0020_ServicesSoap" type="tns:PROMEP_x0020_Web_x0020_ServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IdentificaPTC">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/IdentificaPTC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Direccion">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/Direccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Estudios">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/Estudios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Produccion">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/Produccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Proyectos">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/Proyectos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatosLaborales">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/DatosLaborales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GestionAcademica">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/GestionAcademica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Premios">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/Premios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tutorias">
+      <soap:operation soapAction="http//promepca.sep.gob.mx/WSPromep/Tutorias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PROMEP_x0020_Web_x0020_Services">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Seleccione cualquier opción</documentation>
+    <wsdl:port name="PROMEP_x0020_Web_x0020_ServicesSoap" binding="tns:PROMEP_x0020_Web_x0020_ServicesSoap">
+      <soap:address location="http://promepca.sep.gob.mx/wsPromep/ws.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
