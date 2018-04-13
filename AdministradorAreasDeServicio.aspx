@@ -9,7 +9,7 @@
         <asp:View ID="vAgregarAdministradoresAS" runat="server">
 
             <div class="col-sm-12 form-vertical">
-                
+                <br/>
                 <div class="col-sm-4 form-group">
                 <asp:Label ID="lblUsuario" runat="server" Text="Buscar Usuario" CssClass="control-label"></asp:Label>
                 <asp:TextBox ID="txtUsuario" runat="server" class="form-control"></asp:TextBox>
